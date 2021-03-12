@@ -7,11 +7,25 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes: [
-    {
+  routes: [{
       path: '/',
+      name: 'nologin',
+      component: () => import('./views/NoLogin.vue')
+    },
+    {
+      path: '/home',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('./views/Register')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('./views/Login')
     },
     {
       path: '/about',

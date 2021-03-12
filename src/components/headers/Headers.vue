@@ -7,12 +7,14 @@
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#fff">
-      <el-menu-item index="1">首页</el-menu-item>
+      <el-menu-item index="1">
+        <a href="/main">首页</a>
+      </el-menu-item>
       <el-menu-item index="2">发现</el-menu-item>
       <el-input placeholder="请输入内容" v-model="input" class="input-with-select">
         <el-button slot="append" icon="el-icon-search"></el-button>
       </el-input>
-      <el-menu-item index="3"><a href="">登陆</a>/<a href="https://www.ele.me" target="_blank">注册</a></el-menu-item>
+      <el-menu-item index="3"><a href="/login">登陆</a>/<a href="/register">注册</a></el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -22,7 +24,8 @@ export default {
   name: "header",
   data() {
     return {
-      activeIndex: '1'
+      activeIndex: '1',
+      input: ''
     };
   },
   methods: {
