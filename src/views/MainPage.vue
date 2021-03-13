@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="home">
+  <div id="mainPage">
     <div></div>
     <div></div>
     <div></div>
@@ -7,11 +7,13 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
-  components: {
-
-  }
+  name: "MainPage"
 }
 </script>
+
+<style scoped>
+#mainPage {
+  display: flex;
+}
+</style>

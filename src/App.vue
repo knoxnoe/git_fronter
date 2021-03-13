@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Headers class="header"></Headers>
-    <router-view/>
-    <Footers class="footer"></Footers>
+    <headers class="header"></headers>
+    <router-view class="main"/>
+    <footers class="footer"></footers>
   </div>
 </template>
 
@@ -35,10 +35,8 @@ a {
   text-align: center;
   color: #2c3e50;
 }
-.header {
-  margin-bottom: 100px;
-}
-.footer {
-  margin-top: 100px;
+.main {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 </style>
