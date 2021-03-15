@@ -1,8 +1,7 @@
 <template>
   <div id="home" class="home">
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="profile"><p>1</p></div>
+    <div class=""><p>2</p></div>
   </div>
 </template>
 
@@ -15,3 +14,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+</style>
