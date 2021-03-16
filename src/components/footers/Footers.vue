@@ -16,5 +16,6 @@ export default {
   height: 100px;
   background-color: floralwhite;
   border-top: 1px solid #000;
+  text-align: center;
 }
 </style>
