@@ -22,6 +22,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/repodetail',
+      name: 'repodetail',
+      component: () => import('@v/RepoDetail')
+    },
+    {
       path: '/register',
       name: 'register',
       component: () => import('./views/Register')
