@@ -2,7 +2,7 @@
 const path = require('path')
 
 const vueConfig = {
-    //publicPath: process.env.NODE_ENV === 'production' ? '' : '', // 基本路径-引用文件的路径
+    publicPath: process.env.NODE_ENV === 'production' ? '/git_fronter/' : '/', // 基本路径-引用文件的路径
     outputDir: 'dist', // 输出文件目录
     lintOnSave: false, // eslint-loader 是否在保存的时候检查
     configureWebpack: config => {
