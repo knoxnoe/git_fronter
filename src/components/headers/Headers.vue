@@ -24,7 +24,7 @@
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item icon="el-icon-plus" command="a">slot</el-dropdown-item>
-            <el-dropdown-item icon="el-icon-circle-plus" command="a">个人主页</el-dropdown-item>
+            <el-dropdown-item icon="el-icon-circle-plus" command="p">个人主页</el-dropdown-item>
             <el-dropdown-item icon="el-icon-circle-plus-outline" command="a">修改密码</el-dropdown-item>
             <el-dropdown-item icon="el-icon-check" command="a">设置</el-dropdown-item>
             <el-dropdown-item icon="el-icon-circle-check" command="t">退出</el-dropdown-item>
@@ -53,6 +53,9 @@ export default {
       //this.$message('click on item ' + command);
       if(command == 't') {
         this.isLogin = true
+        this.$router.push('/')
+      }else if(command == 'p') {
+        this.$router.push('/home')
       }
     }
   }
